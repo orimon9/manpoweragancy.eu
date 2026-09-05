@@ -1,0 +1,16 @@
+project_id = "manpower-global-agency"
+
+[functions.contact-inquiry]
+verify_jwt = false
+
+[functions.on-status-change]
+verify_jwt = false
+
+[functions.daily-digest]
+verify_jwt = false
+
+[functions.send-email]
+verify_jwt = true
+
+[functions.document-signed-url]
+verify_jwt = true

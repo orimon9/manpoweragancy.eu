@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Private areas — never index
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /auth
+Disallow: /403
+
+Sitemap: https://manpoweragancyeu.lovable.app/sitemap.xml
