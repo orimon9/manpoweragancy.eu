@@ -1,4 +1,4 @@
 # Netlify / Cloudflare Pages SPA fallback.
 # Without this, a hard refresh on /services or a shared /jobs/... link 404s,
 # because only index.html exists on disk — the router runs in the browser.
-/*    /index.html   200
+
