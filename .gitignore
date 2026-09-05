@@ -27,3 +27,6 @@ dist-ssr
 
 # Production env (contains your real domain + keys)
 .env.production
+
+# Build artefact produced for cPanel upload — regenerate with `npm run build`
+*-site.zip

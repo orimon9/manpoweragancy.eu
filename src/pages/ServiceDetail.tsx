@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Icon } from "@/components/Icon";
 import { faqs, processSteps, services } from "@/content/site";
-import { formatCurrency } from "@/lib/utils";
 
 export default function ServiceDetail() {
   const { slug } = useParams();
@@ -99,14 +98,10 @@ export default function ServiceDetail() {
                   <Icon name={service.icon} className="h-5 w-5" />
                 </span>
                 <h2 className="mt-5 text-lg">Start your {service.title.toLowerCase()}</h2>
-                {service.priceFrom ? (
-                  <p className="mt-3 text-sm text-muted-foreground">
-                    Service fee from{" "}
-                    <strong className="font-display text-2xl text-foreground">{formatCurrency(service.priceFrom)}</strong>
-                    <br />
-                    Government and embassy fees are charged separately, at cost.
-                  </p>
-                ) : null}
+                <p className="mt-3 text-sm text-muted-foreground">
+                  Talk to a consultant about your case and we will tell you exactly what the process involves and how long
+                  it takes.
+                </p>
                 <Button asChild className="mt-6 w-full" variant="accent">
                   <Link to={"/apply?service=" + service.slug}>
                     Apply Now <ArrowRight className="h-4 w-4" aria-hidden />

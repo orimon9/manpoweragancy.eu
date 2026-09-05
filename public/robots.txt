@@ -7,4 +7,4 @@ Disallow: /admin
 Disallow: /auth
 Disallow: /403
 
-Sitemap: https://manpoweragancyeu.lovable.app/sitemap.xml
+Sitemap: https://manpoweragency.eu/sitemap.xml

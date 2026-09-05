@@ -2,7 +2,7 @@ import { defineConfig, loadEnv, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "node:path";
 
-const DEFAULT_SITE_URL = "https://manpoweragancyeu.lovable.app";
+const DEFAULT_SITE_URL = "https://manpoweragency.eu";
 
 /**
  * The static OG tags in index.html need the absolute origin, and social

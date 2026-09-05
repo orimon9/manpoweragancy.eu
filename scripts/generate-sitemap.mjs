@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "..");
-const site = (process.env.VITE_SITE_URL ?? "https://manpoweragancyeu.lovable.app").replace(/\/$/, "");
+const site = (process.env.VITE_SITE_URL ?? "https://manpoweragency.eu").replace(/\/$/, "");
 
 // Kept in step with src/content/site.ts. When the content moves to Supabase,
 // query the published rows here instead.

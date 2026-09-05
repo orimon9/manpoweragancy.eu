@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { company } from "@/content/site";
 
-const SITE_URL = import.meta.env.VITE_SITE_URL ?? "https://manpoweragancyeu.lovable.app";
+const SITE_URL = import.meta.env.VITE_SITE_URL ?? "https://manpoweragency.eu";
 
 type SeoProps = {
   title: string;

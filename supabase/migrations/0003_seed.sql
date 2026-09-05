@@ -29,20 +29,22 @@ insert into public.job_categories (name, slug, icon, sort_order) values
   ('Marketing',            'marketing',        'megaphone',     8)
 on conflict (slug) do nothing;
 
-insert into public.services (title, slug, icon, short_description, price_from, is_featured, sort_order) values
-  ('Work Permit Visa',      'work-permit-visa',     'briefcase',      'Comprehensive assistance for employment-based immigration to Romania and EU countries.', 950,  true, 1),
-  ('Student Visa',          'student-visa',         'graduation-cap', 'Expert guidance for international students seeking education opportunities in Europe.',  750,  true, 2),
-  ('Business Visa',         'business-visa',        'building-2',     'Streamlined processing for entrepreneurs and business professionals.',                   1200, true, 3),
-  ('Investor Visa',         'investor-visa',        'landmark',       'Golden visa programmes and investment-based residency solutions.',                       2500, true, 4),
-  ('Family Reunification',  'family-reunification', 'users',          'Reunite with your loved ones through our family visa services.',                         850,  true, 5),
-  ('TRC Extension',         'trc-extension',        'file-text',      'Temporary Residence Card renewal and extension services.',                               350,  true, 6)
+-- price_from is intentionally left NULL. Fees are quoted per case, in writing,
+-- and are never published on the website.
+insert into public.services (title, slug, icon, short_description, is_featured, sort_order) values
+  ('Work Permit Visa',      'work-permit-visa',     'briefcase',      'Comprehensive assistance for employment-based immigration to Romania and EU countries.', true, 1),
+  ('Student Visa',          'student-visa',         'graduation-cap', 'Expert guidance for international students seeking education opportunities in Europe.',  true, 2),
+  ('Business Visa',         'business-visa',        'building-2',     'Streamlined processing for entrepreneurs and business professionals.',                   true, 3),
+  ('Investor Visa',         'investor-visa',        'landmark',       'Golden visa programmes and investment-based residency solutions.',                       true, 4),
+  ('Family Reunification',  'family-reunification', 'users',          'Reunite with your loved ones through our family visa services.',                         true, 5),
+  ('TRC Extension',         'trc-extension',        'file-text',      'Temporary Residence Card renewal and extension services.',                               true, 6)
 on conflict (slug) do nothing;
 
 insert into public.faqs (question, answer, category, sort_order) values
   ('How long does a Romanian work permit take?', 'The employer files for a work permit with the General Inspectorate for Immigration, which typically takes 30–45 days. The long-stay visa is then decided within a further 20–30 days, so plan for 60–90 days end to end.', 'Work visa', 1),
   ('Do you guarantee that my visa will be approved?', 'No reputable agency can guarantee a visa — the decision belongs to the consulate or immigration authority. What we guarantee is a complete, correctly legalised file submitted on time.', 'General', 2),
   ('What documents do I need to start?', 'Your passport bio page, an up-to-date CV, your highest education certificate and any experience letters. Police clearance and medical certificates come later because they have limited validity.', 'Documents', 3),
-  ('How are your fees structured?', 'Fees split into a service fee paid to us and government or embassy fees paid to the authority. You get a written breakdown before any payment, and government fees are shown at cost.', 'Fees', 4),
+  ('How long does the whole process take?', 'It depends on the destination and the route. Romanian work permits typically run 60–90 days end to end, Netherlands highly skilled migrant permits can be decided in under four weeks, and Canadian permanent residency takes 6–12 months. We give you a realistic timeline for your case at the first consultation.', 'Process', 4),
   ('Can my family join me?', 'Yes. Once you hold a valid residence permit your spouse and dependent children can apply for family reunification, usually after 12 months and subject to accommodation and income tests.', 'Family', 5),
   ('Do you help with accommodation and travel?', 'Yes. Our services department arranges air ticketing, airport pick-up and initial accommodation, and many employer partners include accommodation.', 'Support', 6),
   ('Is my personal data safe?', 'We are a Romanian company processing your data under the GDPR. Documents live in an encrypted, access-controlled store visible only to you and your assigned consultant.', 'Privacy', 7),

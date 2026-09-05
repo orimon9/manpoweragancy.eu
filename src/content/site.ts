@@ -33,7 +33,6 @@ export type Service = {
   shortDescription: string;
   description: string;
   features: string[];
-  priceFrom: number | null;
   featured: boolean;
 };
 
@@ -46,7 +45,6 @@ export const services: Service[] = [
     description:
       "We handle the entire employment immigration process from job matching to visa approval — including employer sponsorship, contract verification and work permit filing with the Romanian General Inspectorate for Immigration.",
     features: ["Employment sponsorship", "Contract verification", "Work permit processing", "Employer liaison"],
-    priceFrom: 950,
     featured: true,
   },
   {
@@ -57,7 +55,6 @@ export const services: Service[] = [
     description:
       "From choosing a programme to landing on campus: university admission support, document legalisation, proof-of-funds preparation, student visa filing and post-study work guidance.",
     features: ["University admission support", "Student visa processing", "Accommodation assistance", "Post-study work guidance"],
-    priceFrom: 750,
     featured: true,
   },
   {
@@ -68,7 +65,6 @@ export const services: Service[] = [
     description:
       "Business plan review, company registration, intra-company transfers and self-employment visas across EU jurisdictions, handled by consultants who know each registry.",
     features: ["Business plan review", "Company registration", "Intra-company transfers", "Self-employment visas"],
-    priceFrom: 1200,
     featured: true,
   },
   {
@@ -79,7 +75,6 @@ export const services: Service[] = [
     description:
       "Investment advisory, property acquisition support and residency-by-investment filings for high-net-worth individuals and property investors.",
     features: ["Investment advisory", "Property acquisition", "Golden visa processing", "Residency by investment"],
-    priceFrom: 2500,
     featured: true,
   },
   {
@@ -90,7 +85,6 @@ export const services: Service[] = [
     description:
       "Spouse and partner visas, child sponsorship, parent visas and extended family applications — prepared to withstand the documentary scrutiny these files attract.",
     features: ["Spouse/partner visas", "Child sponsorship", "Parent visas", "Extended family"],
-    priceFrom: 850,
     featured: true,
   },
   {
@@ -101,7 +95,6 @@ export const services: Service[] = [
     description:
       "Deadline tracking, document preparation, status verification and compliance review so your Temporary Residence Card never lapses.",
     features: ["Document preparation", "Deadline tracking", "Status verification", "Compliance review"],
-    priceFrom: 350,
     featured: true,
   },
   {
@@ -112,7 +105,6 @@ export const services: Service[] = [
     description:
       "Permanent residency eligibility assessment, naturalisation guidance, application support and dual citizenship advice.",
     features: ["PR eligibility assessment", "Application support", "Naturalisation guidance", "Dual citizenship advice"],
-    priceFrom: 1400,
     featured: true,
   },
   {
@@ -123,7 +115,6 @@ export const services: Service[] = [
     description:
       "Gulf, North America and Asia-Pacific placements — including UAE employment visas, Canadian work permits and document attestation for non-EU destinations.",
     features: ["Gulf employment visas", "Canada work permits", "Document attestation", "Pre-departure orientation"],
-    priceFrom: 600,
     featured: false,
   },
 ];
@@ -667,10 +658,10 @@ export const faqs = [
     category: "Documents",
   },
   {
-    question: "How are your fees structured?",
+    question: "How long does the whole process take?",
     answer:
-      "Fees are split into a service fee (paid to us) and government or embassy fees (paid to the authority). You receive a written breakdown before any payment, and government fees are always shown at cost. We never ask for payment in cash without a receipt.",
-    category: "Fees",
+      "It depends on the destination and the route. Romanian work permits typically run 60–90 days end to end, Netherlands highly skilled migrant permits can be decided in under four weeks, and Canadian permanent residency takes 6–12 months. We give you a realistic timeline for your specific case at the first consultation.",
+    category: "Process",
   },
   {
     question: "Can my family join me?",

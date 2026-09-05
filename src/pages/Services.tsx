@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Icon } from "@/components/Icon";
 import { company, services } from "@/content/site";
-import { formatCurrency } from "@/lib/utils";
 
 export default function Services() {
   return (
@@ -64,11 +63,6 @@ export default function Services() {
                   <Button asChild variant="ghost">
                     <Link to={"/services/" + service.slug}>Details</Link>
                   </Button>
-                  {service.priceFrom ? (
-                    <span className="text-sm text-muted-foreground">
-                      Service fee from <strong className="text-foreground">{formatCurrency(service.priceFrom)}</strong>
-                    </span>
-                  ) : null}
                 </div>
               </CardContent>
             </Card>
